@@ -116,6 +116,15 @@ body {
 
 .cta-btn:hover { background: var(--brand-dark); }
 
+.features-intro {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 500px;
+  margin: 0 auto 10px;
+  padding: 0 20px;
+}
+
 .features {
   max-width: 900px;
   margin: 0 auto;
