@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Demo Business — Order Online</title>
+<title>YourBrand | Websites for Local Businesses</title>
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,49 +12,50 @@
   <header class="site-header">
     <div class="header-inner">
       <div class="brand">
-        <div class="brand-mark">DB</div>
-        <span class="brand-name">Demo Business</span>
+        <img src="logo.png" alt="YourBrand logo" class="brand-mark">
+        <span class="brand-name">YourBrand</span>
       </div>
-      <p class="tagline">Order or book online in a few taps</p>
+      <nav class="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="page">
-
-    <section class="products-section">
-      <h2>Products &amp; Services</h2>
-      <div id="product-list" class="product-grid"></div>
-    </section>
-
-    <aside class="basket-panel">
-      <h2>Your Basket</h2>
-      <div id="basket-items" class="basket-items">
-        <p class="empty-basket">Nothing added yet</p>
-      </div>
-
-      <div class="basket-total-row">
-        <span>Total</span>
-        <span id="basket-total">£0.00</span>
-      </div>
-
-      <div class="slot-picker">
-        <label for="time-slot">Choose a time</label>
-        <select id="time-slot"></select>
-      </div>
-
-      <button id="checkout-btn" class="checkout-btn" disabled>Checkout</button>
-    </aside>
-
+  <main class="hero">
+    <img src="logo.png" alt="YourBrand" class="hero-logo">
+    <h1>Affordable, custom-built websites for local businesses</h1>
+    <p>I design and build online booking, ordering, and diary systems for small businesses — the kind of tools usually reserved for big companies, made simple and affordable for the business down the road.</p>
+    <a href="portfolio.html" class="cta-btn">View My Work</a>
   </main>
 
-  <div id="confirmation-overlay" class="overlay hidden">
-    <div class="confirmation-box">
-      <h3>This is a demo</h3>
-      <p>In the live version, this button takes the customer to a secure Stripe payment page, then confirms their order by email — no code changes needed for a real business, just their own products, times, and Stripe account.</p>
-      <button id="close-overlay" class="checkout-btn">Close</button>
+  <section class="features">
+    <div class="feature-card">
+      <div class="feature-icon">📅</div>
+      <div class="feature-title">Live Booking &amp; Diaries</div>
+      <div class="feature-desc">Real-time availability, no double bookings, ever.</div>
     </div>
-  </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔐</div>
+      <div class="feature-title">Owner Portals</div>
+      <div class="feature-desc">See who's booked in, manage availability, all in one place.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">✉️</div>
+      <div class="feature-title">Automatic Emails</div>
+      <div class="feature-desc">Customers get instant confirmations — no manual work for you.</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <div class="feature-title">Built Around Your Brand</div>
+      <div class="feature-desc">Your colours, your logo, your business — not a generic template.</div>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>Interested in a site like this for your business? <a href="contact.html">Get in touch</a>.</p>
+  </footer>
+
 </body>
 </html>
